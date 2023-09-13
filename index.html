@@ -104,5 +104,26 @@
                 <td>30mins</td>
               </tr>
       </table>
+      <h4>Snippet</h4>
+      <a href = "https://stackoverflow.com/questions/49385210/get-full-path-of-selected-file-in-php">Stackoverflow Link</a>
+      <pre>
+        <code>
+            require('textmagic-sms-api-php/TextMagicAPI.php');
+
+            // Set the username and password information
+            $username = 'myusername';
+            $password = 'mypassword';
+            
+            // Create a new instance of TM
+            $router = new TextMagicAPI(array(
+                'username' => $username,
+                'password' => $password
+            ));
+            
+            // Send a text message to '999-123-4567'
+            $result = $router->send('Wake up!', array(9991234567), true);
+            
+       </code>
+      </pre>
     </body>
 </html>
